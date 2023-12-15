@@ -36,16 +36,12 @@ def parseRow(input: String, rowIndex: Int): Vector[Galaxy] =
       )
     }
 
-  val galaxiesAfterExtension1 = galaxiesAfterExtension(1)
-
-  val res1 = galaxiesAfterExtension1
+  val res1 = galaxiesAfterExtension(1)
     .combinations(2)
     .map(pair => pair.head.distanceTo(pair.last))
     .sum
 
-  val galaxiesAfterGreatExtension = galaxiesAfterExtension(1_000_000)
-
-  val res2 = galaxiesAfterGreatExtension
+  val res2 = galaxiesAfterExtension(1_000_000)
     .combinations(2)
     .map(pair => pair.head.distanceTo(pair.last))
     .map(_.toLong)
