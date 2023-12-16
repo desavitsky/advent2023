@@ -1,6 +1,5 @@
 package com.github.desavitsky.day16
 
-import java.time.Instant
 import scala.annotation.tailrec
 import scala.io.Source
 
@@ -91,8 +90,8 @@ def traverseField(positionsWithDirections: Set[(Position, Direction)], field: Ve
   val startPosition  = Position(0, 0)
   val startDirection = Direction.Right
 
-  val res1 = traverseField(Set(startPosition -> startDirection), field)(Map(startPosition -> Vector(startDirection)))
-  println(res1.values.size)
+  val res1 =
+    traverseField(Set(startPosition -> startDirection), field)(Map(startPosition -> Vector(startDirection))).values.size
 
   val allBoundaryTiles: Vector[(Position, Direction)] =
     val columsIndices = field.head.indices.toVector
@@ -109,4 +108,6 @@ def traverseField(positionsWithDirections: Set[(Position, Direction)], field: Ve
     }
     .map(_.values.size)
     .max
+
+  println(res1)
   println(res2)
