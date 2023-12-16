@@ -72,7 +72,7 @@ def findLine(pattern: Vector[String], cond: (String, String) => Boolean): Int =
     }
 
 @main def run =
-  val input = Source.fromResource("day13/task.txt").getLines().toVector
+  val input = Source.fromResource("day13/input.txt").getLines().toVector
 
   val patterns = parseInput(input)(Vector.empty)
   println(patterns.map(findLine(_, _ == _)).sum)

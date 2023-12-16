@@ -66,7 +66,7 @@ object Part1:
 
 @main def run =
   val result = Source
-    .fromResource("day2/day2.txt")
+    .fromResource("day2/input.txt")
     .getLines()
     .toVector
     .flatMap(Part1.Game.unapply)

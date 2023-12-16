@@ -25,7 +25,7 @@ def processBoxes(current: String)(boxes: Map[Int, ListMap[String, Int]]): Map[In
 
 @main def run =
   val input = Source
-    .fromResource("day15/task.txt")
+    .fromResource("day15/input.txt")
     .getLines()
     .toVector
     .head

@@ -15,7 +15,7 @@ def parseRow(input: String, rowIndex: Int): Vector[Galaxy] =
 
 @main def run =
   val initialGalaxies = Source
-    .fromResource("day11/task.txt")
+    .fromResource("day11/input.txt")
     .getLines()
     .zipWithIndex
     .map(parseRow)

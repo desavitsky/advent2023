@@ -45,7 +45,7 @@ def traverse(start: Node, nodes: Map[String, Node], allDirections: List[Directio
 
 @main def run =
   val input = Source
-    .fromResource("day8/task.txt")
+    .fromResource("day8/input.txt")
     .getLines()
     .toVector
 

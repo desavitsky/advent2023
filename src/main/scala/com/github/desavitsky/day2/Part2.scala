@@ -74,7 +74,7 @@ object Part2:
 
 @main def run2 =
   val result = Source
-    .fromResource("day2/day2.txt")
+    .fromResource("day2/input.txt")
     .getLines()
     .toVector
     .flatMap(Part2.MinimalGame.unapply)

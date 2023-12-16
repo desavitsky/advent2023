@@ -114,7 +114,7 @@ def cycleAndFill(field: Vector[Vector[Pipe]], groundPoints: Set[Position], posit
 
 @main def run =
   val field = Source
-    .fromResource("day10/task.txt")
+    .fromResource("day10/input.txt")
     .getLines()
     .toVector
     .map(_.flatMap(s => Pipe.fromString(s.toString)).toVector)

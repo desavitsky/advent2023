@@ -11,7 +11,7 @@ def extrapolateSeq(seq: Seq[Int]): Seq[Int] =
 
 @main def run =
   val input = Source
-    .fromResource("day9/task.txt")
+    .fromResource("day9/input.txt")
     .getLines()
     .toVector
     .map(_.split("\\s+").flatMap(_.toIntOption).toVector)

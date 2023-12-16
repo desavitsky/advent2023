@@ -82,7 +82,7 @@ def traverseField(positionsWithDirections: Set[(Position, Direction)], field: Ve
 
 @main def run =
   val field = Source
-    .fromResource("day16/task.txt")
+    .fromResource("day16/input.txt")
     .getLines()
     .toVector
     .map(_.flatMap(Tile.fromString).toVector)

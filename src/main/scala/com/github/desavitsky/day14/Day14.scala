@@ -50,7 +50,7 @@ def loop(table: Vector[Vector[Char]], n: Int, current: Int, cache: Map[Int, Int]
 @main def run =
 
   val input = Source
-    .fromResource("day14/task.txt")
+    .fromResource("day14/input.txt")
     .getLines()
     .toVector
     .transpose

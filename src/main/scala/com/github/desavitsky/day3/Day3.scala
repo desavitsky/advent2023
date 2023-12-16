@@ -81,6 +81,6 @@ def part2(input: Vector[String]): Int =
     }
 
 @main def run =
-  val input = Source.fromResource("day3/day3.txt").getLines().toVector
+  val input = Source.fromResource("day3/input.txt").getLines().toVector
   println(part1(input))
   println(part2(input))

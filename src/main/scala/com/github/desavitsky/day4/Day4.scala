@@ -36,7 +36,7 @@ object Card:
 @main def run =
 
   val cards = Source
-    .fromResource("day4/task.txt")
+    .fromResource("day4/input.txt")
     .getLines()
     .toVector
     .flatMap(Card.fromString)

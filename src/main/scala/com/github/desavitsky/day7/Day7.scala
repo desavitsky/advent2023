@@ -99,7 +99,7 @@ object Bid:
 
 @main def run =
   val deck = Source
-    .fromResource("day7/task.txt")
+    .fromResource("day7/input.txt")
     .getLines()
     .toVector
     .map(Bid.fromString)

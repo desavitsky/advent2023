@@ -18,5 +18,5 @@ def processInput2(input: Vector[String]): Long =
   input.foldLeft(0L)(_ + cleanString2(_))
 
 @main def run2 =
-  val lines = Source.fromResource("day1/day1.txt").getLines().toVector
+  val lines = Source.fromResource("day1/input.txt").getLines().toVector
   println(processInput2(lines))

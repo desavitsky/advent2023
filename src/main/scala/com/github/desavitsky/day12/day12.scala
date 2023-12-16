@@ -41,7 +41,7 @@ def parseLine(line: String, groups: Vector[Int]): Long =
 
 @main def run =
   val input = Source
-    .fromResource("day12/task.txt")
+    .fromResource("day12/input.txt")
     .getLines()
     .toVector
     .map { str =>

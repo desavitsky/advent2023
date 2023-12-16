@@ -61,7 +61,7 @@ extension (mapFs: Vector[MapF])
 
 @main def run =
   val input =
-    Source.fromResource("day5/task.txt").getLines().toVector.foldLeft(SeedsData(Vector.empty, Vector.empty)) {
+    Source.fromResource("day5/input.txt").getLines().toVector.foldLeft(SeedsData(Vector.empty, Vector.empty)) {
       case (acc, "")               => acc
       case (acc, s"seeds: $seeds") =>
         acc.copy(seeds = seeds.split(" ").map(_.toLong).toVector)

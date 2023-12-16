@@ -27,7 +27,7 @@ case class Race(
 
 @nowarn @main def run =
   val input = Source
-    .fromResource("day6/task.txt")
+    .fromResource("day6/input.txt")
     .getLines()
     .toVector
     .map { str =>
@@ -42,7 +42,7 @@ case class Race(
     case Vector(time, distance) => time.zip(distance).map(Race(_, _))
 
   val input2 = Source
-    .fromResource("day6/task.txt")
+    .fromResource("day6/input.txt")
     .getLines()
     .toVector
     .map { str =>
